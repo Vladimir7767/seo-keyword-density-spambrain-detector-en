@@ -93,8 +93,6 @@ select:focus,input:focus{border-color:var(--primary);outline:none}
 .res-row{display:flex;justify-content:space-between;padding:8px 0;font-size:14px;border-bottom:1px dashed var(--border);align-items:center}
 .res-row:last-child{border-bottom:none}
 .res-val{font-weight:700;color:var(--primary);text-align:right;max-width:65%}
-.partner-btn{display:block;width:100%;padding:11px;background:#fff;border:1px solid var(--purple);color:var(--purple);border-radius:10px;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s;text-align:center;margin-top:12px;text-decoration:none}
-.partner-btn:hover{background:var(--purple);color:#fff}
 .math-log-box{background:#f1f5f9;border:1px solid var(--border);border-radius:10px;padding:12px;margin-top:12px;font-family:monospace;font-size:12px;color:var(--slate);display:none}
 .seo-text{font-size:12px;color:var(--text-muted);margin-top:24px;text-align:justify;line-height:1.4;border-top:1px solid var(--border);padding-top:16px;display:none}
 </style>
@@ -169,17 +167,6 @@ select:focus,input:focus{border-color:var(--primary);outline:none}
 
 <!-- OPEN MATHEMATICAL LOG FOR ENGINE VALIDATION -->
 <div class="math-log-box" id="math-log-container"></div>
-
-<a href="https://github.io" class="partner-btn" id="partner-link">🍏 Generate Valid Schema.org Microdata to Protect Snippet</a>
-
-<!-- ADVANCED INTERNAL LOOP INTERLINKING (Ссылочное кольцо из аудита) -->
-<div style="margin-top:20px; padding-top:16px; border-top:1px dashed var(--border);">
-<div style="font-size:11px; font-weight:700; color:var(--text-muted); text-transform:uppercase; margin-bottom:8px; letter-spacing:0.05em; text-align:center;">Recommended Marketing &amp; Performance Tools:</div>
-<div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
-<a href="https://github.io" style="padding:10px; background:var(--bg); border:1px solid var(--border); border-radius:8px; font-size:11px; font-weight:600; text-decoration:none; color:var(--slate); text-align:center; transition:background 0.2s;" onmouseover="this.style.background='#e2e8f0'" onmouseout="this.style.background='var(--bg)'">🖥️ Core Web Vitals Simulator</a>
-<a href="https://github.io" style="padding:10px; background:var(--bg); border:1px solid var(--border); border-radius:8px; font-size:11px; font-weight:600; text-decoration:none; color:var(--slate); text-align:center; transition:background 0.2s;" onmouseover="this.style.background='#e2e8f0'" onmouseout="this.style.background='var(--bg)'">🍏 Advanced Macro Calculator</a>
-</div>
-</div>
 </div>
 
 <div class="skynet-box" id="skynet-container">
@@ -194,19 +181,7 @@ Our professional online SEO keyword density tool and SpamBrain risk calculator p
 </div>
 </div>
 <script>
-// 1. AUTOMATIC GITHUB PAGES PATH RESET GATEWAY (Защитный шлюз из аудита)
-if (window.location.hostname.includes('github.io') && !window.location.pathname.endsWith('/')) {
-  window.location.replace("https://github.io");
-}
-
 let currentTab = 'text-metrics';
-
-// ISOLATED AFFILIATE LINKS TARGETED TO INTERNAL SCHEMA GENERATOR
-const affiliateLinks = {
-  commercial: "https://github.io",
-  informational: "https://github.io",
-  academic: "https://github.io"
-};
 
 function switchTab(tabName, btn) {
   currentTab = tabName;
@@ -295,16 +270,6 @@ function updatePreview() {
   document.getElementById('live-preview-zone').style.color = color;
   document.getElementById('bar-fill').style.width = pct + '%'; 
   document.getElementById('bar-fill').style.background = color;
-
-  const pLink = document.getElementById('partner-link');
-  if (pLink) {
-    if (d.densityRaw > 2.2) {
-      pLink.innerText = "🚨 Copy At Risk: Generate Schema.org FAQ to Protect Snippet";
-    } else {
-      pLink.innerText = "🍏 Copy Safe: Generate Base WebApplication Microdata";
-    }
-    pLink.href = affiliateLinks[d.textType] || affiliateLinks.commercial;
-  }
 }
 
 window.onload = function() {
@@ -347,7 +312,7 @@ function calculateAiMetrics() {
   let verdict = "Analysis complete. Word frequency structures reside within natural boundaries. Risk of automated filtering by SpamBrain algorithms is minimal.";
   
   if (d.densityRaw > 3.5 || d.zipfDeviation === 'high') {
-    verdict = `🚨 AI SPAMBRAIN VERDICT: Critical concentration of target keywords detected (${d.density}). Frequency disbalance against Zipf's Law vectors marks this passage as unnatural. System projects an automatic organic de-indexing event by Google. Drop density by ${Math.round((d.densityRaw - 2.0) * 10)}% immediately!`;
+    verdict = `🚨 AI SPAMBRAIN VERDICT: Critical concentration of target keywords detected (${d.density}). Frequency disbalance against Zipf's Law vectors marks this passage as unnatural. System projects an automatic organic de-indexing event by Google. Drop density immediately!`;
   } else if (d.densityRaw > 2.2 || d.zipfDeviation === 'medium') {
     verdict = `⚠️ OVER-OPTIMIZATION RISK: Safe commercial saturation thresholds breached for localized long-tail terms. Page risks suppressing by 20-30 positions in SERP, imposing an estimated hidden financial tax of ${d.financialTax} due to lost traffic value.`;
   } else if (d.textType === 'commercial' && d.densityRaw <= 2.2) {
